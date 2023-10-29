@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:scaleType="centerCrop"
+               android:src="@drawable/concrete_background"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/logo"/>
+
+                <EditText
+                    android:id="@+id/username"
+                    style="@style/Widget.AppCompat.AutoCompleteTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:ems="12"
+                    android:hint="Nutzername"
+                    android:textColor="@color/white"
+                    android:inputType="text"
+                    android:textColorHint="@color/prim" />
+
+                <EditText
+                    android:id="@+id/roomCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:ems="12"
+                    android:hint="Raumcode"
+                    android:textColor="@color/white"
+                    android:inputType="text"
+                    android:textColorHint="@color/prim" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="@drawable/join_button"
+                    android:text="Spiel beitreten"/>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="@drawable/create_room_button"
+                    android:layout_margin="3dp"
+                    android:text="Raum erstellen"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:background="@drawable/public_rooms_button"
+                    android:layout_margin="3dp"
+                    android:text="Öffentliche Räume"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:background="@drawable/instructions_button"
+                    android:layout_margin="3dp"
+                    android:text="Spielanleitung"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
