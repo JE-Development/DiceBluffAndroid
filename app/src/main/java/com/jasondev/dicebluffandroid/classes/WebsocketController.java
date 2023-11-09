@@ -49,6 +49,9 @@ public class WebsocketController {
             @Override
             public void onFailure(WebSocket webSocket, Throwable t, Response response) {
                 // Fehler beim WebSocket.
+                System.out.println("dicebluff: on error");
+                System.err.println(t);
+                wsi.onFailure();
             }
         };
 

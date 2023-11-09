@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">DiceBluff</string>
-    <string name="join_button">Join Game</string>
+    <string name="join_button">Spiel beitreten</string>
     <!-- Strings used for fragments for navigation -->
 </resources>
